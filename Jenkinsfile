@@ -8,7 +8,7 @@ pipeline {
         DEV_PORT    = "8081"
         UAT_PORT    = "8082"
         STAGING_PORT= "8083"
-        PROD_PORT   = "8080"
+        PROD_PORT   = "8085"
     }
 
     tools {
@@ -27,7 +27,7 @@ pipeline {
                 echo " Checking out version: ${VERSION}"
                 echo "======================================"
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/hello-cicd.git'
+                    url: 'https://github.com/smohanty-15/hello-cicd.git'
             }
         }
 
