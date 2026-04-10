@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "Hello! CI/CD Pipeline is working perfectly!";
+        return "Hello! CI/CD Pipeline - Version 2 is live!";
     }
 
     @GetMapping("/hello/{name}")
