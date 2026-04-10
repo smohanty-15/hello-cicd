@@ -78,7 +78,7 @@ pipeline {
                 echo "======================================"
                 // Checks for code style issues
                 // "|| true" means: warn but don't fail the pipeline
-                bat 'mvn checkstyle:check || true'
+                bat 'mvn checkstyle:check'
                 echo "Code quality check complete"
             }
         }
